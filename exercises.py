@@ -88,12 +88,76 @@ print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 #
 # Define the function and then call it below.
 
-def sum_to(integer):
+def sum_to(n):
 
-    for n in range()
-    return sum_to
-
+    return n * (n +1) // 2
 
 
 print('Exercise 5:', sum_to(6))
+print('Exercise 5:', sum_to(10))
+
+# Exercise 6: Find the Largest Number
+#
+# Write a function named `largest` that takes three integers as arguments and returns the largest of them.
+#
+# Examples:
+# largest(1, 2, 3) should return 3.
+# largest(10, 4, 2) should return 10.
+#
+# Define your function and test it with different inputs.
+
+def largest (num1, num2, num3):
+
+    if num1>= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+
+print('Exercise 6:', largest(1, 2, 3))
+print('Exercise 6:', largest(30, 40, 37))
+
+# Exercise 7: Calculate a Tip
+#
+# Create a function called `calculate_tip`. It should take the bill amount and the tip percentage (as a whole number).
+# The function should return the amount of the tip.
+#
+# Examples:
+# calculate_tip(50, 20) should return 10.
+#
+# Write your function and test its output below.
+
+def calculate_tip(total_bill, percentage_tip):
+
+    tip_amount =total_bill * (percentage_tip / 100)
+    return tip_amount
+
+
+print('Exercise 7:', calculate_tip(50, 20))
+
+
+# Exercise 8: Calculate Product of Numbers
+#
+# Write a function named `product` that takes an arbitrary number of numbers, multiplies them, and returns the product.
+# Review your notes on *args for handling an arbitrary number of arguments.
+#
+# Examples:
+# product(-1, 4) should return -4.
+# product(2, 5, 5) should return 50.
+#
+# Define the function and call it with different sets of numbers to test.
+
+def product(*args):
+
+    result = 1
+
+    for num in args:
+        result *= num
+    
+    return result
+
+print('Exercise 8:', product(2, 5, 5))
+
+print('Exercise 8:', product(1, 4))
 
